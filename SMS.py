@@ -57,7 +57,7 @@ class SMS:
 
         message = slugify(message)
 
-        preparednumbers = "5555651885"
+        preparednumbers = "5555555555"
         sendsmsxml = "<MainmsgBody><UserName>" + self.username + "-" + self.companycode + "</UserName><PassWord>" + self.password + "</PassWord><Action>" + action + "</Action>"
         sendsmsxml += "<Mesgbody>" + message + "</Mesgbody>"
         sendsmsxml += "<Numbers>" + preparednumbers + "</Numbers>"
