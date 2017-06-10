@@ -20,8 +20,8 @@ class SMS:
         self.password = "yourpassword"
         self.originator = "youroriginator"
         self.charlimit = 152  # This is default char limit for messages
-        self.multimessagecode = "40"  # This is for sending messages to many
-        self.amessagecode = "0"
+        self.multimessagecode = "40"  # This is for sending message which contains more than charlimit
+        self.amessagecode = "0"  # This is for standart message long
 
     def sendrequest(self, url, data):
         print(data)
